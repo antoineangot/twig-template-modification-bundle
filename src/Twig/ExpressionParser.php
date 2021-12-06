@@ -10,9 +10,10 @@ class ExpressionParser extends BaseExpressionParser
 {
     /**
      * @param int $precedence
+     * @param bool $allowArrow
      * @return ExpressionNode
      */
-    public function parseExpression($precedence = 0)
+    public function parseExpression($precedence = 0, $allowArrow = false): ExpressionNode
     {
         $startToken = $this->parser->getCurrentToken();
         $expression = parent::parseExpression($precedence);
