@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
+        "php": ">=7.2",
         "twig/twig": "^1.20",
         "symfony/symfony" : "~3.4"
     },
